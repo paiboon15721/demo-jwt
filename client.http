@@ -1,0 +1,33 @@
+POST http://localhost:3000/register HTTP/1.1
+content-type: application/json
+
+{
+    "email": "clusterkit1@gmail.com",
+    "password": "clusterkit"
+}
+
+###
+
+GET http://localhost:3000 HTTP/1.1
+
+###
+
+GET http://localhost:3000/users HTTP/1.1
+
+###
+POST http://localhost:3000/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "clusterkit1@gmail.com",
+    "password": "clusterkit"
+}
+
+###
+
+GET http://localhost:3000/profile?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsdXN0ZXJraXQxQGdtYWlsLmNvbSIsImlhdCI6MTYxMTk4MzQ0M30.PfH45qo3LcdQte1Ce0-4f2ZaSgRKdRas3xWdsTu-Uoo HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:3000/orders HTTP/1.1
